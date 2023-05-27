@@ -26,14 +26,14 @@ test_dataset = dict(
 
 train_dataloader = dict(
     batch_size=64,
-    num_workers=32,
+    num_workers=2,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     dataset=train_dataset)
 
 test_dataloader = dict(
-    batch_size=1,
-    num_workers=4,
+    batch_size=64,
+    num_workers=2,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
