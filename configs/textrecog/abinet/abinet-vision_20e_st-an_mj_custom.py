@@ -5,7 +5,7 @@ _base_ = [
     '_base_abinet-vision.py',
 ]
 
-optim_wrapper = dict(optimizer=dict(lr=1e-4))
+optim_wrapper = dict(optimizer=dict(lr=5e-5))
 train_cfg = dict(max_epochs=20)
 # learning policy
 param_scheduler = [
